@@ -1,14 +1,28 @@
 import React from "react";
+import Logo from "./Logo";
 
 const Navbar = () => {
   return (
     <div>
-      <div className="flex absolute right-2 top-3 justify-center p-1 m-2 bg-green-100 w-[300px]">
-        <p className=' p-2 m-2'>test</p>
-        <p className='p-2 m-2'>test</p>
-        <p className='p-2 m-2'>test</p>
-        <p className='p-2 m-2'>test</p>
-      </div>
+      <header>
+        <nav className="flex justify-between items-center w-[92%] mx-auto">
+            <div>
+                <Logo/>
+            </div>
+            <div className="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[10%] md:w-auto w-full flex items-center px-5">
+                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vm] gap-8" >
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                    <li>test</li>
+                </ul>
+            </div>
+            <div>
+                <button className="bg-blue-300 px-5 py-2 rounded-full hover:bg-black">Sign in</button>
+            </div>
+        </nav>
+      </header>
     </div>
   );
 };
