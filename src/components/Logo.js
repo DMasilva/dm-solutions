@@ -3,11 +3,10 @@ import React from "react";
 const Logo = () => {
   return (
     <div>
-      <div className="text-left p-5 m-5 bg-red-200 w-[200px]">
-        <h1>
-          <span className="text-red-500">DM</span>{" "}
-          <span className="text-blue-500">Solutions</span>
-        </h1>
+      <div className="text-center p-3 m-3 w-[200px]">
+        <span className="text-red-500 text-2xl font-bold">DM</span>
+        <span className="text-blue-500 text-2xl font-bold">S</span>
+        <span className="text-white text-bold ">olutions</span>
       </div>
     </div>
   );

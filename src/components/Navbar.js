@@ -3,24 +3,31 @@ import Logo from "./Logo";
 
 const Navbar = () => {
   return (
-    <div>
+    <div className="">
       <header>
-        <nav className="flex justify-between items-center w-[92%] mx-auto">
-            <div>
-                <Logo/>
+        <nav className="">
+          <div className=" bg-black md:grid grid-cols-3 sm:block">
+            <div className="border-2">
+              <Logo />
             </div>
-            <div className="md:static absolute md:min-h-fit min-h-[60vh] left-0 top-[10%] md:w-auto w-full flex items-center px-5">
-                <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vm] gap-8" >
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Services</li>
-                    <li>Testimonials</li>
-                    <li>Contacts</li>
-                </ul>
+            <div className="border-2">
+              <ul className="flex md:flex-row flex-col md:items-center md:gap-[4vm] gap-8">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Testimonials</li>
+                <li>Contacts</li>
+              </ul>
             </div>
-            <div>
-                <button onClick={()=>alert('test')} className="bg-blue-300 px-5 py-2 rounded-full hover:bg-black">Sign in</button>
+            <div className="flex justify-end sm:block border-2">
+              <button className="bg-blue-300 px-5 py-2 rounded-full hover:bg-black">
+                Sign up
+              </button>
+              <button className="bg-blue-300 px-5 py-2 rounded-full hover:bg-black">
+                Log in
+              </button>
             </div>
+          </div>
         </nav>
       </header>
     </div>
