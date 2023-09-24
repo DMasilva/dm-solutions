@@ -1,13 +1,16 @@
 import Navbar from "./components/Navbar";
 import Logo from "./components/Logo";
 import Footer from "./components/Footer";
-import SignUp from "./components/SignUp";
+import Login from "./components/Login";
+import Hero from "./components/Hero";
 
 function App() {
   return (
-    <div className="App">
+    <div className="text-gray-600">
+
       <Navbar/>
-      <SignUp/>
+      <Hero/>
+      {/* <Login/> */}
     </div>
   );
 }
