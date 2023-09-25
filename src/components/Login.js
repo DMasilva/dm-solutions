@@ -16,6 +16,8 @@ const Login = () => {
                 <input type='submit' value='login'/>
             </div>
         </form>
+
+      
     </div>
   )
 }
