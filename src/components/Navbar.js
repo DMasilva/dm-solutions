@@ -22,10 +22,10 @@ const Navbar = () => {
          <li className="links"><a href='#'><span className="inline-block mx-1"><CgProfile/></span>Masilva</a></li>
         </ul>
       </div>
-      <div className="text-center">
-        <a className="m-1 bg-white hover:bg-blue-500 rounded border-2" href='#'>Login</a>
+      <div className="text-center md:flex sm:flex justify-center">
+        <a className="m-1 bg-white hover:bg-blue-500 rounded w-100 h-100 inline-block border-2" href='#'>Login</a>
 
-        <a className="m-1 bg-white hover:bg-blue-500 rounded border-2 md:mr-4" href='#'>Signup</a>
+        <a className="m-1 bg-white hover:bg-blue-500 rounded inline-block border-2 md:mr-4" href='#'>Signup</a>
       </div>
       </nav>
     </div>
