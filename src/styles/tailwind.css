@@ -4,7 +4,7 @@
 @import 'tailwindcss/utilities';
 
 .links{
-    @apply mx-2 hover:underline hover:text-blue-400 text-white hover:text-2xl
+    @apply mx-2 hover:underline hover:text-blue-800 text-white
 }
 
 
