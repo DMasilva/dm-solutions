@@ -4,6 +4,7 @@ import { FaHome } from 'react-icons/fa';
 import {BsFillPatchQuestionFill} from 'react-icons/bs'
 import {MdOutlineMiscellaneousServices} from 'react-icons/md'
 import {CgProfile} from 'react-icons/cg'
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
 
@@ -16,10 +17,10 @@ const Navbar = () => {
 
       <div className="w-full">
         <ul className="flex flex-col sm:flex-row sm:justify-center">
-        <li className="links"><a href='#'><span className="inline-block mx-1"> <FaHome /></span>Home</a></li>
-         <li className="links"><a href='#'><span className="inline-block mx-1"><BsFillPatchQuestionFill/></span>About</a></li>
-         <li className="links"><a href='#'><span className="inline-block mx-1"><MdOutlineMiscellaneousServices/></span>Services</a></li>
-         <li className="links"><a href='#'><span className="inline-block mx-1"><CgProfile/></span>Masilva</a></li>
+        <li className="links"><Link href='#'><span className="inline-block mx-1"> <FaHome /></span>Home</Link></li>
+         <li className="links"><Link href='#'><span className="inline-block mx-1"><BsFillPatchQuestionFill/></span>About</Link></li>
+         <li className="links"><Link href='#'><span className="inline-block mx-1"><MdOutlineMiscellaneousServices/></span>Services</Link></li>
+         <li className="links"><Link href='#'><span className="inline-block mx-1"><CgProfile/></span>Masilva</Link></li>
         </ul>
       </div>
       <div className="text-center md:flex sm:flex justify-center">
