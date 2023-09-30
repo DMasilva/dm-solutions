@@ -24,9 +24,9 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="text-center md:flex sm:flex justify-center">
-        <a className="m-1 bg-white hover:bg-blue-500 rounded w-100 h-100 inline-block border-2" href='#'>Login</a>
+        <Link to='/login' className="m-1 bg-white hover:bg-blue-500 rounded w-16 h-100 inline-block border-2" >Login</Link>
 
-        <a className="m-1 bg-white hover:bg-blue-500 rounded inline-block border-2 md:mr-4" href='#'>Signup</a>
+        <Link className="m-1 bg-white hover:bg-blue-500 w-16 rounded inline-block border-2 md:mr-4" >Signup</Link>
       </div>
       </nav>
     </div>
