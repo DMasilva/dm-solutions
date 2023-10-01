@@ -4,14 +4,21 @@ import { FaHome } from 'react-icons/fa';
 import {BsFillPatchQuestionFill} from 'react-icons/bs'
 import {MdOutlineMiscellaneousServices} from 'react-icons/md'
 import {CgProfile} from 'react-icons/cg'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 
 const Navbar = () => {
+
+  const navigate = useNavigate()
+
+  function navigateToHomepage() {
+    navigate('/')
+  }
 
   return (
     <div className="md:text-center md:mx-2 mx-1 mt-2 md:text-xl bg-gradient-to-t from-blue-400 to-blue-100 p-2 sm:p-4">
       <nav className="sm:flex">
-      <div className="mb-4 sm:mb-0">
+      <div onClick={navigateToHomepage} className="mb-4 sm:mb-0 cursor-pointer">
         <Logo/>
       </div>
 
