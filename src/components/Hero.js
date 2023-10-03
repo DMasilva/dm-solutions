@@ -6,7 +6,7 @@ import {MdOutlineCheckBoxOutlineBlank} from 'react-icons/md'
 
 const Hero = () => {
 
-  const [firstPicture, setFirstPicture]=useState(0)
+  const [firstPicture, setFirstPicture]=useState(1)
 
   function nextPicture(){
     const picture = firstPicture === 0
@@ -23,7 +23,7 @@ const Hero = () => {
   }
 
   return (
-    <div className='w-full h-52 border-2 md:h-96 mx-1 md:mx-2 mt-2 relative group'>
+    <div className='w-full min-h-52 md:h-96 lg:h-[600px] xl-h-[720px] border-2 mx-1 md:mx-2 mt-2 relative group'>
         <div style={{backgroundImage: `url(${url[firstPicture]})`}} className='w-full h-full roundex-2xl bg-cover bg-center'></div>
         <div  className='text-2xl absolute hidden group-hover:block top-[50%] rounded-full cursor-pointer translate-x-0 translate-y-[-50%] left-5'><BiSolidLeftArrowSquare onClick={prevPicture}/></div>
         <div className='text-2xl hidden group-hover:block absolute top-[50%] rounded-full cursor-pointer translate-x-0 translate-y-[-50%] right-5'><BiSolidRightArrowSquare  onClick={nextPicture} /></div>
