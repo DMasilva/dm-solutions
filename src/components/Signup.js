@@ -12,21 +12,21 @@ const Signup = () => {
             <input type="text" />
             </div>
             <div>
-                <h2>Personal Details</h2>
+                <h2>Location</h2>
             <input type="text" />
             <input type="text" />
             <input type="text" />
             <input type="text" />
             </div>
             <div>
-                <h2>Personal Details</h2>
+                <h2>Contacts</h2>
             <input type="text" />
             <input type="text" />
             <input type="text" />
             <input type="text" />
             </div>
             <div>
-                <h2>Personal Details</h2>
+                <h2>Service</h2>
             <input type="text" />
             <input type="text" />
             <input type="text" />
